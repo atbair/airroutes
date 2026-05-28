@@ -1,51 +1,76 @@
 # AirRouteApp ✈️
 
-A while ago I wondered how I can find all the passenger airline routes between US and Europe. There was no where I could visualize it. So I decided to make one myself.
+AirRouteApp is an interactive aviation route visualization tool built with Python, Streamlit, and Plotly.
 
-This project can display routes between airports/countries/continents. Additionally, it can show the airlines flying them.
+A while ago, I wanted to explore all passenger airline routes between regions such as North America and Europe, but I could not find a simple way to visualize them. This project was built to solve that problem.
 
-It is a work in progress to make it more user friendly. 
+The app allows users to explore direct passenger airline routes between:
 
-The app can be run live on Strimlit:
+- Airports
+- Countries
+- Continents
 
-##Data Sources:
-The two sets of data are airport and route data:
+It also identifies which airlines operate each route and visualizes connections on an interactive world map.
+
+This project is currently a work in progress, with additional features and usability improvements planned.
+
+## Live App
+
+Try the app here:
+
+https://airroutes-6kpgnbfwxdc5gbfpqqeqpz.streamlit.app/
+
+---
+
+## Features
+
+- Explore airline routes by:
+  - Airport
+  - Country
+  - Continent
+- Interactive route visualization on a global map
+- View airlines operating each route
+- Route deduplication for cleaner visualization
+- Dynamic filtering and route exploration
+
+---
+
+## Data Sources
+
+This project combines two open datasets:
+
 ### Airline Route Data
 
 Route and carrier information comes from:
 
-Jonty / airline-route-data (GitHub: https://github.com/Jonty/airline-route-data)
+**Jonty / airline-route-data**  
+https://github.com/Jonty/airline-route-data
 
 This dataset provides passenger airport routes and airline carrier information.
 
 ### Airport Metadata
 
-Airport coordinates, country codes, and continent information come from:
+Airport coordinates, country codes, continent information, and airport identifiers come from:
 
-OurAirports Open Data (Github: https://github.com/davidmegginson/ourairports-data)
+**OurAirports Open Data**  
+https://github.com/davidmegginson/ourairports-data
 
 Used for:
 
-- airport metadata
-
-- geolocation
-
-- continent and country filtering
+- Airport metadata
+- Geolocation
+- Country and continent filtering
+- Route mapping
 
 ---
 
 ## Tech Stack
 
 - Python
-
 - Pandas
-
 - Streamlit
-
 - Plotly
-
 - Requests
-
 - Git / GitHub
 
 ---
@@ -53,17 +78,58 @@ Used for:
 ## Project Structure
 
 ```text
-
 airrouteapp/
-
 ├── airroute.py
-
 ├── update_data.py
-
 ├── requirements.txt
-
 ├── README.md
-
 └── data/
-
     └── routes_master.csv
+```
+
+---
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/atbair/airroutes.git
+cd airroutes
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the app:
+
+```bash
+streamlit run airroute.py
+```
+
+Update route data:
+
+```bash
+python update_data.py
+```
+
+---
+
+## Future Improvements
+
+Planned features include:
+
+- Airline alliance filters (Star Alliance, SkyTeam, Oneworld)
+- Airline-specific filtering
+- Enhanced map styling
+- Automated monthly route updates
+- Improved mobile usability
+
+---
+
+## Author
+
+Amir Bajehkian
