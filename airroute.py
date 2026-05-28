@@ -263,3 +263,11 @@ st.plotly_chart(
     fig,
     use_container_width=True
 )
+
+st.caption(
+
+    "Data sources: Jonty/airline-route-data for route/carrier data (https://github.com/Jonty/airline-route-data); "
+
+    "OurAirports for airport metadata and coordinates (https://github.com/davidmegginson/ourairports-data)"
+
+)
