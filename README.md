@@ -124,7 +124,7 @@ Planned features include:
 
 - Airline alliance filters (Star Alliance, SkyTeam, Oneworld)
 - Airline-specific filtering
-- Enhanced map styling
+- Enhanced map styling (i.e countries, visual appearance)
 - Automated monthly route updates
 - Improved mobile usability
 
