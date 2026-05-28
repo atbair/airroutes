@@ -1,4 +1,4 @@
-#AirRouteApp ✈️
+# AirRouteApp ✈️
 
 A while ago I wondered how I can find all the passenger airline routes between US and Europe. There was no where I could visualize it. So I decided to make one myself.
 
